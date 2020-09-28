@@ -1,0 +1,21 @@
+a=int(input())
+b=map(int,input().split())
+arr=list(b)
+print(arr)
+ind=0
+arr2=[]
+for i in range(1):
+    for j in range(len(arr)):
+        if arr[0]==1 or arr[1]==2:
+            if  (arr[i]-arr[j])==-1:
+                ind+=1
+                arr2.append(arr[j])
+
+        if (arr[i] - arr[j]) == 1 or (arr[i] - arr[j]) == 0:
+            ind += 1
+            arr2.append(arr[j])
+
+print(len(arr2))
+print(arr2)
+
+
